@@ -1,9 +1,11 @@
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, AlertTriangle } from "lucide-react";
 import gsap from "gsap";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -54,7 +56,7 @@ const HeroSection = () => {
           </p>
 
           <div data-animate className="mt-8 flex flex-wrap gap-4">
-            <Button variant="pill" size="lg" className="rounded-full gap-2 px-8 text-base">
+            <Button variant="pill" size="lg" className="rounded-full gap-2 px-8 text-base" onClick={() => navigate("/dashboard")}>
               Start Health Check
               <ArrowRight className="h-4 w-4" />
             </Button>
