@@ -57,6 +57,9 @@ export default {
         urgency: {
           red: "hsl(var(--urgency-red))",
         },
+        warning: {
+          yellow: "hsl(var(--warning-yellow))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
