@@ -5,6 +5,7 @@ import { ArrowRight, AlertTriangle } from "lucide-react";
 import gsap from "gsap";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
